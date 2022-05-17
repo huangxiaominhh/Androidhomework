@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+       android:orientation="horizontal"
+        android:padding="15dp">
+        <TextView
+          style="@style/tvTwo"
+            android:text="昵称"/>
+        <EditText
+           style="@style/etOne"
+            android:id="@+id/et_name"/>
+
+    </LinearLayout>
+    <View style="@style/hline"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+        <TextView
+            style="@style/tvTwo"
+            android:text="密码"/>
+        <EditText
+            style="@style/etOne"
+            android:id="@+id/et_pwd"/>
+    </LinearLayout>
+    <View style="@style/hline"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+        <TextView
+
+            style="@style/tvTwo"
+            android:text="出生日期"/>
+        <EditText
+            style="@style/etOne"
+            android:id="@+id/birthday"/>
+    </LinearLayout>
+    <View style="@style/hline"/>
+
+
+
+</LinearLayout>
