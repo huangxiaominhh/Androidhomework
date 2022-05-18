@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn_1,btn_2;
+    Button btn_1,btn_2;//定义对象
 
 
     @Override
@@ -22,8 +22,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn_1=findViewById(R.id.btn_1);
+        btn_1=findViewById(R.id.btn_1);//绑定控件
         btn_2=findViewById(R.id.btn_2);
+        //按钮单击事件
         btn_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,18 +54,20 @@ public class MainActivity extends AppCompatActivity {
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast toast=Toast.makeText(MainActivity.this,"进入登录/注册",Toast.LENGTH_SHORT);
-                toast.setGravity(Gravity.CENTER,0,0);//让toast居中
-                ImageView image1=new ImageView(MainActivity.this);
-                image1.setImageResource(R.drawable.a1);
-                LinearLayout toastview=(LinearLayout) toast.getView();
-                toastview.addView(image1);
-                toast.show();
+                //创建一条居中带图片的toast并显示
+                Toast toast=Toast.makeText(MainActivity.this,"注册页面",Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER,0,0);//让toast居中，左右偏移量为0
+                ImageView image1=new ImageView(MainActivity.this);//定义图片控件
+                image1.setImageResource(R.mipmap.a1);//设置图片
+                LinearLayout toastview=(LinearLayout) toast.getView();//定义toast的布局视图为线性布局
+                toastview.addView(image1);//将图片加载到toast布局中
+                toast.show();//显示toast
                 Intent intent=new Intent("android.intent.action.SecondActivity11");
                 startActivity(intent);
 
             }
         });
-        Toast.makeText(MainActivity.this, "欢迎进入小世界", Toast.LENGTH_LONG).show();//进入app浮现的一句话
+        //创建一条显示时间短的toast
+        Toast.makeText(MainActivity.this, "欢迎进入小世界", Toast.LENGTH_SHORT).show();//进入app浮现的一句话
     }
 }

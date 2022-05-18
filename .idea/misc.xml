@@ -3,8 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.16302083333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/avatar_1.xml" value="0.16302083333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/avatar_10.xml" value="0.16302083333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/avatar_11.xml" value="0.16302083333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/avatar_12.xml" value="0.16302083333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/avatar_13.xml" value="0.16302083333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/avatar_15.xml" value="0.16302083333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/avatar_16.xml" value="0.16302083333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/avatar_2.xml" value="0.16302083333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/avatar_4.xml" value="0.16302083333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/avatar_5.xml" value="0.16302083333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/avatar_7.xml" value="0.16302083333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/avatar_8.xml" value="0.16302083333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/avatar_9.xml" value="0.16302083333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/ic_camera_black_24dp.xml" value="0.16302083333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/ic_gallery_black_24dp.xml" value="0.16302083333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/ic_launcher_background.xml" value="0.16302083333333334" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_second.xml" value="0.1" />
+        <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_third.xml" value="0.146875" />
+        <entry key="..\:/Androidhomework/app/src/main/res/layout/content_third.xml" value="0.146875" />
+        <entry key="..\:/Androidhomework/app/src/main/res/layout/fragment_reflow.xml" value="0.146875" />
+        <entry key="..\:/Androidhomework/app/src/main/res/layout/fragment_settings.xml" value="0.146875" />
+        <entry key="..\:/Androidhomework/app/src/main/res/menu/bottom_navigation.xml" value="0.24114583333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/menu/navigation_drawer.xml" value="0.24114583333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/menu/overflow.xml" value="0.24114583333333334" />
       </map>
     </option>
   </component>
