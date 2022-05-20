@@ -45,8 +45,20 @@
             style="@style/etOne"
             android:id="@+id/et_pwd"/>
     </LinearLayout>
+    <View style="@style/hline"/>
 
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="#FD8C8C"
+        android:text="登录"
+        android:textSize="20dp"
+        android:textColor="@color/white"
 
+        />
 
 
 </LinearLayout>
