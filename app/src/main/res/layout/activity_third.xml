@@ -44,9 +44,18 @@
             android:textSize="20sp"/>
         <EditText
             style="@style/etOne"
+            android:inputType="textPassword"
             android:id="@+id/et_pwd"/>
     </LinearLayout>
     <View style="@style/hline"/>
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="记住密码"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/btn_3"
