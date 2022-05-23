@@ -3,9 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:columnCount="6"
-    android:paddingTop="60dp"
+    android:paddingTop="28dp"
+    android:background="#FF00BCD4"
+    >
 
-    android:background="#FF00BCD4">
     //第一
     <TextView
         android:layout_width="150dp"
@@ -29,8 +30,8 @@
         android:id="@+id/btn_4"
         android:layout_column="5"
         android:layout_row="0"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:background="@drawable/avatar_15"
 
         />
@@ -54,8 +55,8 @@
         android:id="@+id/btn_5"
         android:layout_column="0"
         android:layout_row="1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:background="@drawable/avatar_3"
 
         />
@@ -72,7 +73,7 @@
         android:layout_marginBottom="10dp"
         android:gravity="center"
         android:textSize="20dp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:background="@drawable/textstyle3"
         android:layout_marginRight="30dp"
         android:text="动次打次" />
@@ -81,9 +82,9 @@
         android:id="@+id/btn_6"
         android:layout_column="5"
         android:layout_row="2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/avatar_11"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/avatar_12"
         />
     //第四
 
@@ -91,8 +92,8 @@
         android:id="@+id/btn_7"
         android:layout_row="3"
         android:layout_column="0"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:background="@drawable/avatar_2"
         />
 
@@ -109,18 +110,36 @@
         android:layout_marginLeft="30dp"
         android:text="让我看看"
         />
+
     <TextView
-        android:layout_width="150dp"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:id="@+id/text_06"
+        android:layout_column="2"
+        android:layout_row="5"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/textstyle5"
+        android:gravity="center"
+        android:layout_columnSpan="4"
+        android:textSize="18dp"
+        android:text="来到小世界"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="180dp"
         android:layout_height="40dp"
         android:id="@+id/text_05"
         android:layout_column="1"
         android:layout_row="5"
-        android:background="@drawable/textstyle4"
+        android:background="@drawable/textstyle5"
         android:gravity="center"
+        android:layout_columnSpan="4"
         android:textSize="20dp"
-        android:layout_marginBottom="120dp"
-        android:textColor="@color/black"
-        android:layout_marginLeft="30dp"
-        android:text=""/>
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        />
+
 
 </GridLayout>

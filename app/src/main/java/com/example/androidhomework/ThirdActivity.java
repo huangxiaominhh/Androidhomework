@@ -38,7 +38,8 @@ public class ThirdActivity extends AppCompatActivity {
                 editor.putString("pwd",ed_pwd.getText().toString());//把输入发密码存放在pwd键中
                 editor.putBoolean("st",checkBox.isChecked());//把复选框的状态存放在status键里
                 editor.commit();//提交，即为存储成功
-                //页面跳转逻辑
+                //页面跳转逻辑,把登录昵称传到WriteActivity
+
                 Intent intent = new Intent(ThirdActivity.this,FourthActivity.class);
                 intent.putExtra("hh",ed.getText().toString());//键值
                 startActivity(intent);
