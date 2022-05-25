@@ -39,6 +39,8 @@
         <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_listen.xml" value="0.10677083333333333" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_look.xml" value="0.10677083333333333" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_music.xml" value="0.1" />
+        <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_player.xml" value="0.1" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_second.xml" value="0.1" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_sixth.xml" value="0.24114583333333334" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_third.xml" value="0.146875" />
@@ -46,6 +48,7 @@
         <entry key="..\:/Androidhomework/app/src/main/res/layout/content_third.xml" value="0.146875" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/fragment_reflow.xml" value="0.146875" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/fragment_settings.xml" value="0.146875" />
+        <entry key="..\:/Androidhomework/app/src/main/res/layout/music_item.xml" value="0.1" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/recy_item.xml" value="0.176" />
         <entry key="..\:/Androidhomework/app/src/main/res/menu/bottom_navigation.xml" value="0.24114583333333334" />
         <entry key="..\:/Androidhomework/app/src/main/res/menu/navigation_drawer.xml" value="0.24114583333333334" />
