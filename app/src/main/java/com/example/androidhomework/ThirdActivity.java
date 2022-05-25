@@ -3,6 +3,8 @@ package com.example.androidhomework;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -17,9 +19,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ThirdActivity extends AppCompatActivity {
     //定义对象
+    private EditText et_name, et_pwd;
     Button btn_3,btn_login;
     EditText ed,ed_pwd;
     CheckBox checkBox;
+    private String name, pwd;
     @Override
     protected void onCreate (@Nullable Bundle savedInstanceState) {
 
@@ -29,9 +33,11 @@ public class ThirdActivity extends AppCompatActivity {
         ed_pwd = findViewById(R.id.et_pwd);
         checkBox=findViewById(R.id.checkbox);
         btn_3=findViewById(R.id.btn_3);
+
         btn_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 //单击按钮将输入的用户名、密码、复选框状态保存起来
                 SharedPreferences.Editor editor=getSharedPreferences("myfile",0).edit();
                 editor.putString("name",ed.getText().toString());//键：值，键值对方式存储
@@ -45,7 +51,7 @@ public class ThirdActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
                 //创建一条居中带图片的toast并显示
-                Toast toast=Toast.makeText(ThirdActivity.this,"点击头像去你想去的地方",Toast.LENGTH_SHORT);
+                Toast toast=Toast.makeText(ThirdActivity.this,"点击头像去探索小世界把",Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.CENTER,2,2);//让toast居中，左右偏移量为0
                 ImageView image2=new ImageView(ThirdActivity.this);//定义图片控件
                 image2.setImageResource(R.drawable.img);//设置图片
@@ -53,6 +59,9 @@ public class ThirdActivity extends AppCompatActivity {
                 toastview.addView(image2);//将图片加载到toast布局中
                 toast.show();//显示toast
             }
+
+
+
 
         });
 //选中记住密码复选框，下一次启动，获取昵称和密码并显示出来
@@ -69,5 +78,8 @@ public class ThirdActivity extends AppCompatActivity {
             ed_pwd.setText("");
             checkBox.setChecked(false);
         }
+
+
     }
+
 }

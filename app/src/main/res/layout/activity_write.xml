@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FF00BCD4"
+    
         >
 
     <fragment
@@ -13,10 +13,10 @@
         android:layout_height="match_parent" />
     <LinearLayout
         android:layout_width="100dp"
-        android:layout_height="300dp"
+        android:layout_height="250dp"
         android:layout_alignParentBottom="true"
         android:orientation="vertical"
-        android:layout_alignParentRight="true">
+        >
         <ImageView
             android:layout_width="100dp"
             android:layout_height="50dp"
@@ -43,15 +43,40 @@
             android:src="@drawable/avatar_4"/>
 
     </LinearLayout>
+
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true">
+
         <TextView
             android:id="@+id/txt07"
-            android:background="@drawable/avatar_4"
             android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:text="记录美好生活吧"
+
+            />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:background="@drawable/textstyle"
+            android:text="添加备忘录" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="kkkkkk"/>
+            android:layout_marginLeft="-96dp"
+            android:layout_marginTop="90dp"
+
+            />
+
     </LinearLayout>
 
 

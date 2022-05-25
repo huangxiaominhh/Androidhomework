@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    //标题
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="标题"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:gravity="top"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/pick"
+        android:layout_marginTop="-10dp"/>
+    //内容
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="内容"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:gravity="top"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/pick"
+        android:layout_marginTop="-10sp"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="保存"
+        android:textColor="@color/pick"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        />
+</LinearLayout>

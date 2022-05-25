@@ -24,24 +24,29 @@
         <entry key="..\:/Androidhomework/app/src/main/res/drawable/ic_camera_black_24dp.xml" value="0.16302083333333334" />
         <entry key="..\:/Androidhomework/app/src/main/res/drawable/ic_gallery_black_24dp.xml" value="0.16302083333333334" />
         <entry key="..\:/Androidhomework/app/src/main/res/drawable/ic_launcher_background.xml" value="0.16302083333333334" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/textstyle.xml" value="0.25333333333333335" />
         <entry key="..\:/Androidhomework/app/src/main/res/drawable/textstyle2.xml" value="0.1" />
         <entry key="..\:/Androidhomework/app/src/main/res/drawable/textstyle3.xml" value="0.1" />
         <entry key="..\:/Androidhomework/app/src/main/res/drawable/textstyle4.xml" value="0.1" />
         <entry key="..\:/Androidhomework/app/src/main/res/drawable/textstyle5.xml" value="0.25729166666666664" />
+        <entry key="..\:/Androidhomework/app/src/main/res/drawable/textstyle6.xml" value="0.14907407407407408" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/a1.xml" value="0.22864583333333333" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/a2.xml" value="0.22864583333333333" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/a3.xml" value="0.12135416666666667" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/a4.xml" value="0.12135416666666667" />
+        <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_addwrite.xml" value="0.1" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_fourth.xml" value="0.1" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_listen.xml" value="0.10677083333333333" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_look.xml" value="0.10677083333333333" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_second.xml" value="0.1" />
+        <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_sixth.xml" value="0.24114583333333334" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_third.xml" value="0.146875" />
-        <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_write.xml" value="0.16538461538461538" />
+        <entry key="..\:/Androidhomework/app/src/main/res/layout/activity_write.xml" value="0.176" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/content_third.xml" value="0.146875" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/fragment_reflow.xml" value="0.146875" />
         <entry key="..\:/Androidhomework/app/src/main/res/layout/fragment_settings.xml" value="0.146875" />
+        <entry key="..\:/Androidhomework/app/src/main/res/layout/recy_item.xml" value="0.176" />
         <entry key="..\:/Androidhomework/app/src/main/res/menu/bottom_navigation.xml" value="0.24114583333333334" />
         <entry key="..\:/Androidhomework/app/src/main/res/menu/navigation_drawer.xml" value="0.24114583333333334" />
         <entry key="..\:/Androidhomework/app/src/main/res/menu/overflow.xml" value="0.24114583333333334" />

@@ -118,7 +118,7 @@
         android:layout_column="2"
         android:layout_row="5"
         android:layout_marginRight="20dp"
-        android:background="@drawable/textstyle5"
+        android:background="#FF00BCD4"
         android:gravity="center"
         android:layout_columnSpan="4"
         android:textSize="18dp"
@@ -133,7 +133,7 @@
         android:id="@+id/text_05"
         android:layout_column="1"
         android:layout_row="5"
-        android:background="@drawable/textstyle5"
+
         android:gravity="center"
         android:layout_columnSpan="4"
         android:textSize="20dp"
