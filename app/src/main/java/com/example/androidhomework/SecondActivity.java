@@ -3,6 +3,7 @@ package com.example.androidhomework;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.icu.util.Calendar;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -22,6 +23,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SecondActivity extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
@@ -99,6 +101,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         et_birthday.setOnTouchListener(new View.OnTouchListener()
 
         {
+            @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public boolean onTouch (View view, MotionEvent motionEvent){
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
@@ -111,6 +114,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         et_birthday.setOnFocusChangeListener(new View.OnFocusChangeListener()
 
         {
+            @RequiresApi(api = Build.VERSION_CODES.N)
             @Override
             public void onFocusChange (View view,boolean hasFous){
                 if (hasFous) {
@@ -149,23 +153,16 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
                     Toast.makeText(this, "注册成功", Toast.LENGTH_SHORT).show();
                     Log.i("regsiter", "注册用户信息:" + "昵称: " + name + ",密码：" + pwd + ",性别：" + sex );
                     //点击注册按钮跳转到登录按钮
-//                    btn_submit.setOnClickListener(new View.OnClickListener() {
-//
-//                        @Override
-//                        public void onClick(View view) {
-//                            Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
-//                            startActivity(intent);//显式Intent
-//                            //创建一条居中带图片的toast并显示
-//                            Toast toast = Toast.makeText(SecondActivity.this, "登录页面", Toast.LENGTH_SHORT);
-//                            toast.setGravity(Gravity.CENTER, 2, 2);//让toast居中，左右偏移量为0
-//                            ImageView image1 = new ImageView(SecondActivity.this);//定义图片控件
-//                            image1.setImageResource(R.mipmap.a1);//设置图片
-//                            LinearLayout toastview = (LinearLayout) toast.getView();//定义toast的布局视图为线性布局
-//                            toastview.addView(image1);//将图片加载到toast布局中
-//                            toast.show();//显示toast
-//                        }
-//
-//                    });
+                            Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                            startActivity(intent);//显式Intent
+                            //创建一条居中带图片的toast并显示
+                            Toast toast = Toast.makeText(SecondActivity.this, "登录页面", Toast.LENGTH_SHORT);
+                            toast.setGravity(Gravity.CENTER, 2, 2);//让toast居中，左右偏移量为0
+                            ImageView image1 = new ImageView(SecondActivity.this);//定义图片控件
+                            image1.setImageResource(R.mipmap.a1);//设置图片
+                            LinearLayout toastview = (LinearLayout) toast.getView();//定义toast的布局视图为线性布局
+                            toastview.addView(image1);//将图片加载到toast布局中
+                            toast.show();//显示toast
                 }
                 break;
         }
@@ -180,6 +177,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
 
 
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     protected void showDatePickDlg(){
             Calendar calendar = Calendar.getInstance();
             DatePickerDialog datePickerDialog =new DatePickerDialog(SecondActivity.this, new DatePickerDialog.OnDateSetListener() {

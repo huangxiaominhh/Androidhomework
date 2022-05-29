@@ -5,10 +5,12 @@ public class Music {
     private String singerName;
 
     public String getMusicTitle() {
+
         return musicTitle;
     }
 
     public String getSingerName() {
+
         return singerName;
     }
 

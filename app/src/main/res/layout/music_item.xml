@@ -28,7 +28,7 @@
        android:textStyle="bold"
        android:textSize="20sp"
        android:textColor="@color/pick"
-       android:text="歌手"/>
+       android:text="歌手名字"/>
 </LinearLayout>
 
 
