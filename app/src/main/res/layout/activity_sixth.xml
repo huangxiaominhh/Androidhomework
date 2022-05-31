@@ -1,9 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SixthActivity">
+    tools:context=".SixthActivity"
+    android:background="@drawable/sheep7"
+   >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="点击笑嘻嘻的羊，去走探羊之路吧"
+        android:background="@color/purple_500"
+        />
 
-</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/iv_sheep"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/sheep01" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_toLeftOf="@+id/iv_sheep"
+            android:background="@color/purple_500"
+            android:gravity="center"
+            android:text="来探羊吧,点击弹出的小羊崽"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_one"
+                style="@style/badge_style"/>
+
+            <ImageView style="@style/sheep_style" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_two"
+                style="@style/badge_style"/>
+            <ImageView
+                style="@style/sheep_style"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_three"
+                style="@style/badge_style"/>
+            <ImageView
+                style="@style/sheep_style"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

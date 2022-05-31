@@ -1,7 +1,10 @@
 package com.example.androidhomework;
 
 import android.app.DatePickerDialog;
+import android.content.ContentValues;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteDatabase;
 import android.icu.util.Calendar;
 import android.os.Build;
 import android.os.Bundle;
@@ -26,6 +29,8 @@ import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.androidhomework.db.MyDbHelper;
+
 public class SecondActivity extends AppCompatActivity implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
 
     private EditText et_birthday, et_name, et_pwd;
@@ -33,6 +38,8 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     private Button btn_submit, btn_login;
     private CheckBox cb_sing, cb_write, cb_play, other;
     private String name, pwd, sex, hobbys;
+    private MyDbHelper mMyDbHelper;
+    SQLiteDatabase db;//定义数据库对象
 
 
     @Override
@@ -40,6 +47,8 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         init();
+//        btnSave();
+        mMyDbHelper = new MyDbHelper(this);
     }
 
     private void init() {
@@ -150,11 +159,14 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
                 } else if (TextUtils.isEmpty(sex)) {
                     Toast.makeText(this, "请输入您的性别", Toast.LENGTH_SHORT).show();
                 } else {
+
                     Toast.makeText(this, "注册成功", Toast.LENGTH_SHORT).show();
                     Log.i("regsiter", "注册用户信息:" + "昵称: " + name + ",密码：" + pwd + ",性别：" + sex );
+                                    mMyDbHelper.add(name,pwd);
                     //点击注册按钮跳转到登录按钮
                             Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
                             startActivity(intent);//显式Intent
+                            finish();
                             //创建一条居中带图片的toast并显示
                             Toast toast = Toast.makeText(SecondActivity.this, "登录页面", Toast.LENGTH_SHORT);
                             toast.setGravity(Gravity.CENTER, 2, 2);//让toast居中，左右偏移量为0
@@ -192,6 +204,21 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
 
 
 
+    }
+
+    //把信息保存到数据库中
+    private void btnSave() {
+        btn_submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //保存信息到数据
+                ContentValues contentValues=new ContentValues();//一行
+                contentValues.put("name",et_name.getText().toString());//一行1列
+                contentValues.put("pwd",et_pwd.getText().toString());//一行3列
+                db.insert("user",null,contentValues);
+            }
+
+        });
     }
 
 

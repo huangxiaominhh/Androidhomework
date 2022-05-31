@@ -2,10 +2,13 @@ package com.example.androidhomework;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -49,6 +52,14 @@ public class FourthActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FourthActivity.this, ListenActivity.class);
+                //创建一条居中带图片的toast并显示
+                Toast toast=Toast.makeText(FourthActivity.this,"按住鼠标滑动点击歌曲一起听音乐吧",Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER,2,2);//让toast居中，左右偏移量为0
+                ImageView image2=new ImageView(FourthActivity.this);//定义图片控件
+                image2.setImageResource(R.drawable.mu);//设置图片
+                LinearLayout toastview=(LinearLayout) toast.getView();//定义toast的布局视图为线性布局
+                toastview.addView(image2);//将图片加载到toast布局中
+                toast.show();//显示toast
                 startActivity(intent);
                 finish();
             }
