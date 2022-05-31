@@ -38,14 +38,32 @@ public class FourthActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FourthActivity.this, WriteActivity.class);
+                //创建一条居中带图片的toast并显示
+                Toast toast=Toast.makeText(FourthActivity.this,"写一写",Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER,2,2);//让toast居中，左右偏移量为0
+                ImageView image2=new ImageView(FourthActivity.this);//定义图片控件
+                image2.setImageResource(R.drawable.avatar_1);//设置图片
+                LinearLayout toastview=(LinearLayout) toast.getView();//定义toast的布局视图为线性布局
+                toastview.addView(image2);//将图片加载到toast布局中
+                toast.show();//显示toast
                 startActivity(intent);
+                finish();
+
             }
         });
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FourthActivity.this, SixthActivity.class);
+                Toast toast=Toast.makeText(FourthActivity.this,"探羊",Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER,2,2);//让toast居中，左右偏移量为0
+                ImageView image2=new ImageView(FourthActivity.this);//定义图片控件
+                image2.setImageResource(R.drawable.sheep2);//设置图片
+                LinearLayout toastview=(LinearLayout) toast.getView();//定义toast的布局视图为线性布局
+                toastview.addView(image2);//将图片加载到toast布局中
+                toast.show();//显示toast
                 startActivity(intent);
+                finish();
             }
         });
         btn6.setOnClickListener(new View.OnClickListener() {
@@ -68,7 +86,15 @@ public class FourthActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FourthActivity.this, LookActivity.class);
+                Toast toast=Toast.makeText(FourthActivity.this,"看一看",Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER,2,2);//让toast居中，左右偏移量为0
+                ImageView image2=new ImageView(FourthActivity.this);//定义图片控件
+                image2.setImageResource(R.drawable.avatar_1);//设置图片
+                LinearLayout toastview=(LinearLayout) toast.getView();//定义toast的布局视图为线性布局
+                toastview.addView(image2);//将图片加载到toast布局中
+                toast.show();//显示toast
                 startActivity(intent);
+                finish();
             }
         });
 
